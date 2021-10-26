@@ -1,0 +1,146 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c3347;
+    color: white; }
+
+.btn {
+    padding: 10px 0;
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: rgb(36, 113, 255);
+    color: white }
+
+.btn-red {
+    background-color: rgb(236, 56, 56);
+    color: white; }
+
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white; }
+
+.btn-transparent:hover {
+    background-color: white;
+    color: #2c3347; }
+
+.text-white {
+    color: white; }
+
+.text-red {
+    color: rgb(236, 56, 56); }
+
+.text-center {
+    text-align: center; }
+
+.m-auto {
+    margin: auto; }
+
+.my-30 {
+    margin: 30px 0;}
+
+.mx-5 {
+    margin: 0 5px; }
+
+.w-50-cent {
+    width: 50%; }
+
+.w-33-cent {
+    width: 33%; }
+
+.w-100-v {
+    width: 100vw; }
+
+.w-100-h {
+    height: 100vh; }
+
+.stopwatch {
+    /* border: 2px solid white;
+    border-radius: 50%; */
+    padding: 70px 0; }
+
+.timer-container {
+    display: inline-block; }
+
+#container {
+    width: 680px; }
+
+.timer {
+    font-family: "Roboto Mono", monospace;
+    font-size: 36px; }
+
+@media screen and (max-width: 680px) {
+    #container {
+        width: 500px; }
+
+    #stopwatch {
+        padding: 100px 0; }
+
+    #timer {
+        font-size: 36px; }
+}
+
+#resume-btn {
+    display: none; }
+
+#pause-btn {
+    display: none; }
+
+#lap-btn {
+    display: inline-block; }
+
+.record-text {
+    line-height: 2.15em;
+    font-size: 22px; }
+
+the-timer::part(timer-container) {
+    display:inline-block;
+    width: 33%;
+    text-align: center; }
+
+the-timer::part(timer) {
+    font-family: "Roboto Mono", monospace;
+    font-size: 36px; }
+
+the-timer::part(stopwatch) {
+    /* border: 2px solid white;
+    border-radius: 50%; */
+    padding: 70px 0; }
+
+the-timer::part(button) {
+    padding: 10px 0;
+    margin: 0 5px;
+    width: 100px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white; }
+
+the-timer::part(none-button) {
+    display: none; }
+
+the-timer::part(record-text) {
+    line-height: 2.15em;
+    font-size: 22px; }
+
+the-timer::part(my-30) {
+    margin: 30px 0; }
+
+#clear-btn {
+    width: 120px;
+}
